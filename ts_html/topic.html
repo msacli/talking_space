@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <title>create a topic</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ckeditor/ckeditor.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">talking space</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="register.html">create an account</a></li>
+            <li><a href="create.html">create topic</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="main-col">
+            <div class="block">
+              <h1 class="pull-left">how did yo learn these things</h1>
+              <h4 class="pull-right">a simple php forum engine</h4>
+              <div class="clearfix"></div>
+              <hr>
+             
+                
+                <ul id="topics">
+                <li id="main-topic" class="topic topic">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="user-info">
+                        <img src="img/gravatar.jpg" class="avatar pull-left">
+                        <ul>
+                          <li><strong>BRADT81</strong></li>
+                          <li>43 Posts</li>
+                          <li><a href="profile.php">Profile</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="topic-content pull-right">
+                          <p>I just worked out something html and css are basic not much to learn</p>
+                        </div>
+                      </div>
+                  </div>
+                </li>
+                
+                <li class="topic topic">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="user-info">
+                        <img src="img/gravatar.jpg" class="avatar pull-left">
+                        <ul>
+                          <li><strong>BRADT81</strong></li>
+                          <li>43 Posts</li>
+                          <li><a href="profile.php">Profile</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="topic-content pull-right">
+                          <p>congrats on how to make imasdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asd fasd fasf</p>
+                        </div>
+                      </div>
+                  </div>
+                </li>
+
+                
+                <li class="topic topic">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="user-info">
+                        <img src="img/gravatar.jpg" class="avatar pull-left">
+                        <ul>
+                          <li><strong>BRADT81</strong></li>
+                          <li>43 Posts</li>
+                          <li><a href="profile.php">Profile</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="topic-content pull-right">
+                          <p>congrats on how to make imasdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asd fasd fasf</p>
+                        </div>
+                      </div>
+                  </div>
+                </li>
+
+              </ul>
+              <h3>reply to topic</h3>
+              <form role="form">
+                <div class="form-group">
+                  <textarea id="reply" rows="10" cols="80" name="reply" ></textarea>
+                  <script>CKEDITOR.replace('reply');</script>
+                </div>
+                <button type="submit" class="btn btn-default">submit</button>
+              </form>
+            </div>
+            </div>
+            </div>
+            
+          <div class="col-md-4">
+            <div id="sidebar">
+              <div class="block">
+                <h3>Login Form</h3>
+                <form role="form">
+                  <div class="form-group">
+                    <label>Username</label>
+                    <input  name="username" type="text" class="form-control" placeholder="enter username">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+            <div class="block">
+              <h3>categories</h3>
+              <div class="list-group">
+                <a href="#" class="list-group-item active">all topicas <span class="badge pull-right">14</span> </a>
+                <a href="#" class="list-group-item">design <span class="badge pull-right">4</span> </a>
+                <a href="#" class="list-group-item">development<span class="badge pull-right">9</span> </a>
+                <a href="#" class="list-group-item">businees & marceting <span class="badge pull-right">12</span> </a>
+                <a href="#" class="list-group-item">search egines <span class="badge pull-right">7</span> </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+  </body>
+</html>
